@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-    Test
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/cjs/react.production.min.js" integrity="sha512-wGcZXj/wGy0PrK1PUJpABds0CNVMN5FOvx6RJ4VFX6d1cP21LHdn32pqqHZxnlAyTY3MN6agJQnV/RkWiOTZzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/cjs/react-dom.production.min.js" integrity="sha512-YebYCRMY3TALn2xZ76TLby+Fp9Fi9ISMC/+5gO/Ta3XHWW46e0yGnYdx6G33GxoEbxCtzDu5d3pMHLqAevmFkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div id="root"></div>
+    <script>
+        const rootElement = document.getElementById('root')
+        const element=React.createElement('div',{
+            className: 'container'
+        }, 'Hola Mundo');
+        ReactDOM.render(element,rootElement);
+    </script>
 </body>
 </html>
